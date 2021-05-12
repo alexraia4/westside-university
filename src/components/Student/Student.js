@@ -26,7 +26,7 @@ export default class Student extends Component {
         <h1>{this.state.studentInfo.first_name} {this.state.studentInfo.last_name}</h1>
         <h3>Grade: {this.state.studentInfo.grade}</h3>
         <h3>Email: {this.state.studentInfo.email}</h3>
-        <Link to = {`/classlist/${this.props.class}`}>BACK</Link>
+        <Link to = {`/classlist/${this.state.studentInfo.class}`}>BACK</Link>
       </div>
     )
   }
